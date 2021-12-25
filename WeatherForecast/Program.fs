@@ -1,0 +1,40 @@
+namespace WeatherForecast
+
+#nowarn "20"
+
+open Microsoft.AspNetCore.Builder
+open Microsoft.Extensions.DependencyInjection
+open Microsoft.Extensions.Hosting
+
+module Program =
+    let exitCode = 0
+
+    [<EntryPoint>]
+    let main args =
+        let builder = WebApplication.CreateBuilder(args)
+
+        builder
+            .Services
+            .AddControllersWithViews()
+            .AddRazorRuntimeCompilation()
+
+        builder.Services.AddRazorPages()
+
+        let app = builder.Build()
+
+        if not (builder.Environment.IsDevelopment()) then
+            app.UseExceptionHandler("/Home/Error")
+            app.UseHsts() |> ignore
+        app.UseHttpsRedirection()
+
+        app.UseStaticFiles()
+        app.UseRouting()
+        app.UseAuthorization()
+
+        app.MapControllerRoute(name = "default", pattern = "{controller=Home}/{action=Index}")
+
+        app.MapRazorPages()
+
+        app.Run()
+
+        exitCode
