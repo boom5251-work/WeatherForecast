@@ -5,6 +5,9 @@ namespace WeatherForecast
 open Microsoft.AspNetCore.Builder
 open Microsoft.Extensions.DependencyInjection
 open Microsoft.Extensions.Hosting
+open WeatherForecast.Dependencies
+
+
 
 module Program =
     let exitCode = 0
@@ -19,19 +22,23 @@ module Program =
             .AddRazorRuntimeCompilation()
 
         builder.Services.AddRazorPages()
+        builder.Services.AddCors()
+        builder.Services.AddSingleton<IConditionIconService, ConditionIconService>()
+
 
         let app = builder.Build()
 
         if not (builder.Environment.IsDevelopment()) then
             app.UseExceptionHandler("/Home/Error")
             app.UseHsts() |> ignore
+
         app.UseHttpsRedirection()
 
         app.UseStaticFiles()
         app.UseRouting()
         app.UseAuthorization()
 
-        app.MapControllerRoute(name = "default", pattern = "{controller=Home}/{action=Index}")
+        app.MapControllerRoute(name = "default", pattern = "{controller=Weather}/{action=Index}")
 
         app.MapRazorPages()
 

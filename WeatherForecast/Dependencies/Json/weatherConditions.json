@@ -1,0 +1,194 @@
+﻿[
+  {
+    "code": 1000,
+    "svg_files": [ "sun.svg", "hot-sun.svg", "moon.svg" ]
+  },
+  {
+    "code": 1003,
+    "svg_files": [ "sun-clouds.svg", "moon-clouds.svg" ]
+  },
+  {
+    "code": 1006,
+    "svg_files": [ "sun-clouds.svg", "moon-clouds.svg" ]
+  },
+  {
+    "code": 1009,
+    "svg_files": [ "clouds.svg", "night-clouds.svg" ]
+  },
+  {
+    "code": 1030,
+    "svg_files": [ "fog.svg", "night-fog.svg" ]
+  },
+  {
+    "code": 1063,
+    "svg_files": [ "sun-clouds-rain.svg", "moon-clouds-rain.svg" ]
+  },
+  {
+    "code": 1066,
+    "svg_files": [ "clouds-snow.svg", "moon-clouds-snow.svg" ]
+  },
+  {
+    "code": 1069,
+    "svg_files": [ "clouds-rain-snow.svg", "moon-clouds-rain-snow.svg" ]
+  },
+  {
+    "code": 1072,
+    "svg_files": [ "clouds-rain-snow.svg", "moon-clouds-rain-snow.svg" ]
+  },
+  {
+    "code": 1087,
+    "svg_files": [ "clouds-thunder.svg", "moon-clouds-thunder.svg" ]
+  },
+  {
+    "code": 1114,
+    "svg_files": [ "clouds-snow.svg", "moon-clouds-snow.svg" ]
+  },
+  {
+    "code": 1117,
+    "svg_files": [ "clouds-snow.svg", "moon-clouds-snow.svg" ]
+  },
+  {
+    "code": 1135,
+    "svg_files": [ "clouds-fog.svg", "moon-clouds-fog.svg" ]
+  },
+  {
+    "code": 1147,
+    "svg_files": [ "clouds-fog.svg", "moon-clouds-fog.svg" ]
+  },
+  {
+    "code": 1150,
+    "svg_files": [ "clouds-light-rain.svg", "moon-clouds-light-rain.svg" ]
+  },
+  {
+    "code": 1153,
+    "svg_files": [ "clouds-light-rain.svg", "moon-clouds-light-rain.svg" ]
+  },
+  {
+    "code": 1168,
+    "svg_files": [ "clouds-rain-snow.svg", "moon-clouds-rain-snow.svg" ]
+  },
+  {
+    "code": 1171,
+    "svg_files": [ "clouds-light-rain.svg", "moon-clouds-light-rain.svg" ]
+  },
+  {
+    "code": 1180,
+    "svg_files": [ "clouds-light-rain.svg", "moon-clouds-light-rain.svg" ]
+  },
+  {
+    "code": 1183,
+    "svg_files": [ "clouds-light-rain.svg", "moon-clouds-light-rain.svg" ]
+  },
+  {
+    "code": 1186,
+    "svg_files": [ "clouds-rain.svg", "moon-clouds-rain.svg" ]
+  },
+  {
+    "code": 1189,
+    "svg_files": [ "clouds-rain.svg", "moon-clouds-rain.svg" ]
+  },
+  {
+    "code": 1192,
+    "svg_files": [ "clouds-heavy-rain.svg", "moon-clouds-heavy-rain.svg" ]
+  },
+  {
+    "code": 1195,
+    "svg_files": [ "clouds-heavy-rain.svg", "moon-clouds-heavy-rain.svg" ]
+  },
+  {
+    "code": 1198,
+    "svg_files": [ "clouds-rain-snow.svg", "moon-clouds-rain-snow.svg" ]
+  },
+  {
+    "code": 1201,
+    "svg_files": [ "clouds-rain-snow.svg", "moon-clouds-rain-snow.svg" ]
+  },
+  {
+    "code": 1204,
+    "svg_files": [ "clouds-snow.svg", "moon-clouds-snow.svg" ]
+  },
+  {
+    "code": 1207,
+    "svg_files": [ "clouds-snow.svg", "moon-clouds-snow.svg" ]
+  },
+  {
+    "code": 1210,
+    "svg_files": [ "clouds-snow.svg", "moon-clouds-snow.svg" ]
+  },
+  {
+    "code": 1213,
+    "svg_files": [ "clouds-snow.svg", "moon-clouds-snow.svg" ]
+  },
+  {
+    "code": 1216,
+    "svg_files": [ "clouds-snow.svg", "moon-clouds-snow.svg" ]
+  },
+  {
+    "code": 1219,
+    "svg_files": [ "clouds-snow.svg", "moon-clouds-snow.svg" ]
+  },
+  {
+    "code": 1222,
+    "svg_files": [ "clouds-snow.svg", "moon-clouds-snow.svg" ]
+  },
+  {
+    "code": 1225,
+    "svg_files": [ "clouds-snow.svg", "moon-clouds-snow.svg" ]
+  },
+  {
+    "code": 1237,
+    "svg_files": [ "clouds-snow.svg", "moon-clouds-snow.svg" ]
+  },
+  {
+    "code": 1240,
+    "svg_files": [ "clouds-light-rain.svg", "moon-clouds-light-rain.svg" ]
+  },
+  {
+    "code": 1243,
+    "svg_files": [ "clouds-rain.svg", "moon-clouds-rain.svg" ]
+  },
+  {
+    "code": 1246,
+    "svg_files": [ "clouds-heavy-rain.svg", "moon-clouds-heavy-rain.svg" ]
+  },
+  {
+    "code": 1249,
+    "svg_files": [ "clouds-rain-snow.svg", "moon-clouds-rain-snow.svg" ]
+  },
+  {
+    "code": 1252,
+    "svg_files": [ "clouds-rain-snow.svg", "moon-clouds-rain-snow.svg" ]
+  },
+  {
+    "code": 1255,
+    "svg_files": [ "clouds-rain-snow.svg", "moon-clouds-rain-snow.svg" ]
+  },
+  {
+    "code": 1258,
+    "svg_files": [ "clouds-snow.svg", "moon-clouds-snow.svg" ]
+  },
+  {
+    "code": 1261,
+    "svg_files": [ "clouds-rain-snow.svg", "moon-clouds-rain-snow.svg" ]
+  },
+  {
+    "code": 1264,
+    "svg_files": [ "clouds-rain-snow.svg", "moon-clouds-rain-snow.svg" ]
+  },
+  {
+    "code": 1273,
+    "svg_files": [ "clouds-rain-thunder.svg", "moon-clouds-rain-thunder.svg" ]
+  },
+  {
+    "code": 1276,
+    "svg_files": [ "clouds-rain-thunder.svg", "moon-clouds-rain-thunder.svg" ]
+  },
+  {
+    "code": 1279,
+    "svg_files": [ "clouds-snow.svg", "moon-clouds-snow.svg" ]
+  },
+  {
+    "code": 1282,
+    "svg_files": [ "clouds-snow.svg", "moon-clouds-snow.svg" ]
+  }
+]

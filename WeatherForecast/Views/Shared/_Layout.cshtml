@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta lang="ru" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WeatherForecast</title>
+
+    <title>@ViewData["Title"]</title>
+
+    @if (ViewData["Style"] != null)
+    {
+        <link href="~/css/@ViewData["Style"]" rel="stylesheet" />
+    }
 </head>
 <body>
     @RenderBody()

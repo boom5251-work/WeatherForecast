@@ -1,17 +1,58 @@
 @import 'main'
 
 
-.week-forecast-container-item
-  margin: 0 20px
+.day-forecast-item
+  align-items: center
+  display: flex
+  flex-direction: column
+
+  .time
+    font-size: 14pt
+
+  .icon
+    margin: 15px 0
+    user-select: none
+    width: 90px
 
   .temperature
     font-size: 24pt
 
 
 
+.locName
+  font-size: 36pt
 
 
-.icons-test
-  display: flex
-  flex-direction: row
-  flex-flow: wrap
+.regionCountry
+  font-size: 20pt
+  margin: 10px 0
+
+
+.temperature-container
+  .icon
+    width: 150px
+
+  .temperature
+    font-size: 38pt
+    margin: 20px 0 0 0
+
+
+.weather-info-container
+
+  >div
+    margin-bottom: 15px
+
+  p
+    font-size: 14pt
+    margin: 0 0 5px 0
+
+    >span
+      margin-left: 10px
+
+
+footer
+  a
+    cursor: pointer
+    font-size: 10pt
+    margin: 0 10px
+    text-decoration: none

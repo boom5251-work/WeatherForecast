@@ -1,0 +1,84 @@
+﻿@using WeatherForecast.Models
+@using WeatherForecast.Dependencies
+
+@model WeatherViewModel
+
+@inject IConditionIconService conditionIconService
+
+@{
+    ViewData["Title"] = $"{@Model.Current.LocName} — Weather Forecast";
+    ViewData["Style"] = @Model.GetStylesFileName();
+
+    IConditionViewModel currentViewModel = @Model.Current;
+}
+
+
+<section>
+    <div class="current-weather-container">
+        <div class="location-info-container">
+            <h1 class="locName">@Model.Current.LocName</h1>
+
+            @if (@Model.Current.Region != string.Empty && @Model.Current.Country != string.Empty)
+            {
+                <h2 class="regionCountry">@Model.Current.Region, @Model.Current.Country</h2>
+            }
+            else if (@Model.Current.Region != string.Empty)
+            {
+                <h2 class="regionCountry">@Model.Current.Region</h2>
+            }
+            else
+            {
+                <h2 class="regionCountry">@Model.Current.Country</h2>
+            }
+        </div>
+        <div class="temperature-container">
+            @{
+                string currentIconFileName = @Model.GetSvgFileName(conditionIconService, @Model.Current);
+                
+                <img class="icon" src="~/resources/svg/@currentIconFileName" />
+                <span class="temperature">@Math.Round(@currentViewModel.Temperature)&deg;C</span>
+            }
+        </div>
+        <div class="weather-info-container">
+            <div>
+                <p>Feels like:<span>@Math.Round(@currentViewModel.FeelsLikeTemperature)&deg;C</span></p>
+            </div>
+            <div>
+                <p>Wind speed:<span>@Math.Round(@Model.Current.WindSpeed / 3.6) mps</span></p>
+                <p>Wind direction:<span>@Model.Current.WindDirection</span></p>
+            </div>
+            <div>
+                @if (@Model.Astronomy.Sunrise != TimeOnly.MinValue)
+                {
+                    <p>Sunrise:<span>@Model.Astronomy.Sunrise.ToString("HH:mm")</span></p>
+                }
+                @if (@Model.Astronomy.Sunset != TimeOnly.MinValue)
+                {
+                    <p>Sunset:<span>@Model.Astronomy.Sunset.ToString("HH:mm")</span></p>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="day-forecast-container">
+        @foreach (ForecastViewModel viewModel in @Model.Forecast)
+        {
+            string forecastIconFileName = @Model.GetSvgFileName(conditionIconService, viewModel);
+            IConditionViewModel forecastViewModel = viewModel;
+            
+            <div class="day-forecast-item">
+                <span class="time">@viewModel.DateTime.ToString("H:mm")</span>
+                <img class="icon" src="~/resources/svg/@forecastIconFileName" />
+                <span class="temperature">@Math.Round(@forecastViewModel.Temperature)&deg;C</span>
+            </div>
+        }
+    </div>
+</section>
+
+<footer>
+    <a href="https://github.com/boom5251-work/WeatherForecast">repository</a>
+    <a href="https://boom5251-work.github.io/Resume/">portfolio</a>
+    <a href="https://www.behance.net/gallery/65686219/simpe-weather-app">designed by</a>
+</footer>

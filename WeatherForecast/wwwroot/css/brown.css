@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Geliat-Extra-Light";
+  src: url("/resources/fonts/GeliatExtralight.otf");
+}
+body {
+  background-color: #e8ddd4;
+  margin: 100px auto 50px auto;
+  max-width: 1000px;
+  width: 60%;
+}
+
+p, span, a {
+  font-family: "Geliat-Extra-Light";
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Geliat-Extra-Light";
+  margin: 0;
+}
+
+a {
+  transition: 0.5s;
+}
+
+.current-weather-container {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 60px 0;
+  justify-content: space-between;
+}
+.current-weather-container .location-info-container {
+  width: 30%;
+}
+.current-weather-container .temperature-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+  width: 30%;
+}
+.current-weather-container .weather-info-container {
+  width: 30%;
+}
+
+.day-forecast-container {
+  aling-itmes: stretch;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 60px 0;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: "Geliat-Extra-Light";
+  src: url("/resources/fonts/GeliatExtralight.otf");
+}
+body {
+  background-color: #e8ddd4;
+  margin: 100px auto 50px auto;
+  max-width: 1000px;
+  width: 60%;
+}
+
+p, span, a {
+  font-family: "Geliat-Extra-Light";
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Geliat-Extra-Light";
+  margin: 0;
+}
+
+a {
+  transition: 0.5s;
+}
+
+.day-forecast-item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.day-forecast-item .time {
+  font-size: 14pt;
+}
+.day-forecast-item .icon {
+  margin: 15px 0;
+  user-select: none;
+  width: 90px;
+}
+.day-forecast-item .temperature {
+  font-size: 24pt;
+}
+
+.locName {
+  font-size: 36pt;
+}
+
+.regionCountry {
+  font-size: 20pt;
+  margin: 10px 0;
+}
+
+.temperature-container .icon {
+  width: 150px;
+}
+.temperature-container .temperature {
+  font-size: 38pt;
+  margin: 20px 0 0 0;
+}
+
+.weather-info-container > div {
+  margin-bottom: 15px;
+}
+.weather-info-container p {
+  font-size: 14pt;
+  margin: 0 0 5px 0;
+}
+.weather-info-container p > span {
+  margin-left: 10px;
+}
+
+footer a {
+  cursor: pointer;
+  font-size: 10pt;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+body {
+  background-color: #e0d7c5;
+  color: #3c3c3c;
+}
+
+a:visited {
+  color: #3c3c3c;
+}
+
+/*# sourceMappingURL=brown.css.map */

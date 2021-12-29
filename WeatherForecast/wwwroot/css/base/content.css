@@ -1,20 +1,4 @@
-@font-face {
-  font-family: "Geliat-Extra-Light";
-  src: url("/resources/fonts/GeliatExtraLight.otf");
-}
-body {
-  background-color: #e8ddd4;
-  margin: 100px auto 50px auto;
-  max-width: 1000px;
-  width: 60%;
-}
-
-h1, h3, p, span {
-  color: #3c3c3c;
-  font-family: "Geliat-Extra-Light";
-  margin: 0;
-}
-
+@import 'main.css';
 .week-forecast-container-item {
   margin: 0 20px;
 }

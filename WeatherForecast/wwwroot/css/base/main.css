@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Geliat-Extra-Light";
+  src: url("/resources/fonts/GeliatExtralight.otf");
+}
+body {
+  background-color: #e8ddd4;
+  margin: 100px auto 50px auto;
+  max-width: 1000px;
+  width: 60%;
+}
+
+h1, h3, p, span {
+  font-family: "Geliat-Extra-Light";
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

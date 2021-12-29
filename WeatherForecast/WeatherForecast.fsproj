@@ -5,7 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Controllers/HomeController.fs" />
+    <Compile Include="Dependencies\Serializable\WeatherCondition.fs" />
+    <Compile Include="Dependencies\ConditonIconService.fs" />
+    <Compile Include="Models\IConditionViewModel.fs" />
+    <Compile Include="Models\AstronomyViewModel.fs" />
+    <Compile Include="Models\ForecastViewModel.fs" />
+    <Compile Include="Models\CurrentWeatherViewModel.fs" />
+    <Compile Include="Models\InfoViewModel.fs" />
+    <Compile Include="Models\Extentions\ForecastViewModelsExtension.fs" />
+    <Compile Include="Models\WeatherViewModel.fs" />
+    <Compile Include="Data\Modeler.fs" />
+    <Compile Include="Data\WeatherApi.fs" />
+    <Compile Include="Controllers\WeatherController.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
@@ -14,9 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\resources\svg\" />
   </ItemGroup>
 
   <ItemGroup>

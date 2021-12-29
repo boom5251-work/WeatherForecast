@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Geliat-Extra-Light";
+  src: url("/resources/fonts/GeliatExtralight.otf");
+}
+body {
+  background-color: #e8ddd4;
+  margin: 100px auto 50px auto;
+  max-width: 1000px;
+  width: 60%;
+}
+
+p, span, a {
+  font-family: "Geliat-Extra-Light";
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Geliat-Extra-Light";
+  margin: 0;
+}
+
+a {
+  transition: 0.5s;
+}
+
+h1, p, a {
+  color: #3c3c3c;
+}
+
+.info-container {
+  align-items: center;
+  margin: auto;
+  padding: 100px 0;
+  width: 70%;
+}
+
+.info-header-text {
+  display: inline-block;
+  font-size: 32pt;
+}
+
+.info-text {
+  display: inline-block;
+  font-size: 18pt;
+  margin-top: 40px;
+}
+.info-text > span {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=info.css.map */

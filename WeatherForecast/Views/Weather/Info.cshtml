@@ -1,0 +1,32 @@
+﻿@using WeatherForecast.Models
+
+@model InfoViewModel
+
+@{
+    ViewData["Title"] = @Model.Title;
+    ViewData["Style"] = "info.css";
+
+    Random random = new Random();
+}
+
+
+@foreach (var fileName in @Model.ScriptFileNames)
+{
+    <script src="~/js/@fileName"></script>
+}
+
+
+<section class="info-container">
+    <h1 class="info-header-text">@Model.Title</h1>
+
+    @{
+        string[] cities = new string[] { "Moscow", "Saint-Petersburg", "Chelyabinsk", "Kaliningrad", "Ekaterinburg", "Saratov", "Vladivostok", "Perm", "Makhachkala" };
+        string randomCity = cities[random.Next(0, cities.Length)];
+
+        <p class="info-text">
+            <span>@Model.Description</span>
+            <br />
+            <span>You can see the forecast for <a href="/@randomCity">@randomCity</a>.</span>
+        </p>
+    }
+</section>
