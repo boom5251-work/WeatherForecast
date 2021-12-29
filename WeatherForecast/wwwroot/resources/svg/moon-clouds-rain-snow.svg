@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="175" height="175" viewBox="0 0 175 175">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+      }
+
+      .b {
+        fill: #e0c8a4;
+      }
+
+      .c {
+        fill: #fefefe;
+      }
+
+      .d {
+        fill: #68a7ff;
+      }
+    </style>
+  </defs>
+  <rect class="a" width="175" height="175"/>
+  <path class="b" d="M118.5,66.1A26.48,26.48,0,1,1,86,27.6a26.43,26.43,0,0,0,8.33,36.45l.07,0A27,27,0,0,0,118.5,66.1Z"/>
+  <g>
+    <g>
+      <path class="c" d="M175,87a44,44,0,0,1-88,0Z"/>
+      <path class="c" d="M87,87H0C0,62.7,19.48,43,43.5,43S87,62.7,87,87Z"/>
+    </g>
+    <g>
+      <g>
+        <circle class="c" cx="28.5" cy="97.5" r="2.5"/>
+        <circle class="c" cx="28.5" cy="110.5" r="2.5"/>
+        <circle class="c" cx="28.5" cy="133.5" r="2.5"/>
+      </g>
+      <g>
+        <circle class="c" cx="58.5" cy="97.5" r="2.5"/>
+        <circle class="c" cx="58.5" cy="110.5" r="2.5"/>
+        <circle class="c" cx="58.5" cy="133.5" r="2.5"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <g>
+      <rect class="d" x="41.5" y="95" width="4" height="12"/>
+      <rect class="d" x="41.5" y="116" width="4" height="12"/>
+    </g>
+    <g>
+      <rect class="d" x="11.5" y="95" width="4" height="12"/>
+      <rect class="d" x="11.5" y="116" width="4" height="12"/>
+    </g>
+    <g>
+      <rect class="d" x="71.5" y="95" width="4" height="12"/>
+      <rect class="d" x="71.5" y="116" width="4" height="12"/>
+    </g>
+  </g>
+</svg>

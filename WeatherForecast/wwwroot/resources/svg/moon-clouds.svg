@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="175" height="175" viewBox="0 0 175 175">
+  <rect fill="none" width="175" height="175"/>
+  <path fill="#e0c8a4" d="M118.47,66.06A26.5,26.5,0,1,1,86,27.44a26.51,26.51,0,0,0,32.44,38.62Z"/>
+  <g fill="#fefefe">
+    <g>
+      <path class="c" d="M175,87a44,44,0,0,1-88,0Z"/>
+      <path class="c" d="M87,87H0C0,62.7,19.48,43,43.5,43S87,62.7,87,87Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="175" height="175" viewBox="0 0 175 175">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+      }
+
+      .b {
+        fill: #e0c8a4;
+      }
+
+      .c {
+        fill: #fbae17;
+      }
+    </style>
+  </defs>
+  <rect class="a" width="175" height="175"/>
+  <path class="b" d="M130.15,114.07a50.12,50.12,0,1,1-61.46-72.9,50.1,50.1,0,0,0,61.4,72.9Z"/>
+  <polygon class="c" points="99.2 72.2 102 64 104.8 72.2 113 75 104.8 77.8 102 86 99.2 77.8 91 75 99.2 72.2"/>
+</svg>

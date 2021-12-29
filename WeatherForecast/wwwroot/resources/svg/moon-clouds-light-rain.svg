@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="175" height="175" viewBox="0 0 175 175">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+      }
+
+      .b {
+        fill: #e0c8a4;
+      }
+
+      .c {
+        fill: #fefefe;
+      }
+
+      .d {
+        fill: #68a7ff;
+      }
+    </style>
+  </defs>
+  <rect class="a" width="175" height="175"/>
+  <path class="b" d="M118.5,66.1A26.48,26.48,0,0,1,73.6,38,26.27,26.27,0,0,1,86,27.6a26.44,26.44,0,0,0,8.4,36.5,27,27,0,0,0,24.1,2Z"/>
+  <g>
+    <path class="c" d="M175,87.5a44,44,0,0,1-88,0Z"/>
+    <path class="c" d="M87,87.5H0c0-24.3,19.48-44,43.5-44S87,63.2,87,87.5Z"/>
+  </g>
+  <g>
+    <g>
+      <rect class="d" x="11.5" y="122.5" width="4" height="7"/>
+      <rect class="d" x="11.5" y="109.5" width="4" height="7"/>
+      <rect class="d" x="11.5" y="96.5" width="4" height="7"/>
+    </g>
+    <g>
+      <rect class="d" x="26.5" y="122.5" width="4" height="7"/>
+      <rect class="d" x="26.5" y="109.5" width="4" height="7"/>
+      <rect class="d" x="26.5" y="96.5" width="4" height="7"/>
+    </g>
+    <g>
+      <rect class="d" x="42" y="122.5" width="4" height="7"/>
+      <rect class="d" x="42" y="109.5" width="4" height="7"/>
+      <rect class="d" x="42" y="96.5" width="4" height="7"/>
+    </g>
+    <g>
+      <rect class="d" x="56.5" y="122.5" width="4" height="7"/>
+      <rect class="d" x="56.5" y="109.5" width="4" height="7"/>
+      <rect class="d" x="56.5" y="96.5" width="4" height="7"/>
+    </g>
+    <g>
+      <rect class="d" x="71.5" y="122.5" width="4" height="7"/>
+      <rect class="d" x="71.5" y="109.5" width="4" height="7"/>
+      <rect class="d" x="71.5" y="96.5" width="4" height="7"/>
+    </g>
+  </g>
+</svg>

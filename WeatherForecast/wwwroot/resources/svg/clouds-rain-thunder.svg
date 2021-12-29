@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="175" height="175" viewBox="0 0 175 175">
+  <rect fill="none" width="175" height="175"/>
+  <g fill="#fefefe">
+    <path d="M175,87a44,44,0,0,1-88,0Z"/>
+    <path d="M87,87H0C0,62.7,19.48,43,43.5,43S87,62.7,87,87Z"/>
+    <polygon points="54.01 111.5 43.01 130 43.01 111.5 54.01 111.5"/>
+    <polygon points="43.01 93.04 43.01 111.5 31.99 111.5 42.99 93 43.01 93.04"/>
+  </g>
+  <g fill="#68a7ff">
+    <g>
+      <rect x="11.5" y="96" width="4" height="12"/>
+      <rect x="11.5" y="117" width="4" height="12"/>
+    </g>
+    <g>
+      <rect x="71.5" y="96" width="4" height="12"/>
+      <rect x="71.5" y="117" width="4" height="12"/>
+    </g>
+    <g>
+      <rect x="26.5" y="96" width="4" height="12"/>
+      <rect x="26.5" y="117" width="4" height="12"/>
+    </g>
+    <g>
+      <rect x="56.5" y="96" width="4" height="12"/>
+      <rect x="56.5" y="117" width="4" height="12"/>
+    </g>
+  </g>
+</svg>

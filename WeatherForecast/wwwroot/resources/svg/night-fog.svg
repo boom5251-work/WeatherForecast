@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="175" height="175" viewBox="0 0 175 175">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+      }
+
+      .b {
+        fill: #e0c7a2;
+      }
+
+      .c {
+        fill: #fbae17;
+      }
+    </style>
+  </defs>
+  <rect class="a" width="175" height="175"/>
+  <g>
+    <rect class="b" x="48" y="47" width="69" height="3"/>
+    <rect class="b" x="63" y="60" width="61" height="3"/>
+    <rect class="b" x="59" y="72" width="52" height="3"/>
+    <rect class="b" x="60" y="98" width="31" height="3"/>
+    <rect class="b" x="68" y="111" width="19" height="3"/>
+    <rect class="b" x="78" y="158" width="11" height="3"/>
+    <rect class="b" x="53" y="85" width="45" height="3"/>
+  </g>
+  <polygon class="c" points="31.9 58.7 34.7 50.5 37.5 58.7 45.7 61.5 37.5 64.3 34.7 72.5 31.9 64.3 23.7 61.5 31.9 58.7"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="175" height="175" viewBox="0 0 175 175">
+  <rect fill="none" width="175" height="175"/>
+  <g fill="#fefefe">
+    <g>
+      <path d="M175,87a44,44,0,0,1-88,0Z"/>
+      <path d="M87,87H0C0,62.7,19.48,43,43.5,43S87,62.7,87,87Z"/>
+    </g>
+    <g>
+      <g>
+        <circle cx="28.5" cy="97.5" r="2.5"/>
+        <circle cx="28.5" cy="110.5" r="2.5"/>
+        <circle cx="28.5" cy="133.5" r="2.5"/>
+      </g>
+      <g>
+        <circle cx="58.5" cy="97.5" r="2.5"/>
+        <circle cx="58.5" cy="110.5" r="2.5"/>
+        <circle cx="58.5" cy="133.5" r="2.5"/>
+      </g>
+      <g>
+        <circle cx="43.5" cy="97.5" r="2.5"/>
+        <circle cx="43.5" cy="110.5" r="2.5"/>
+        <circle cx="43.5" cy="133.5" r="2.5"/>
+      </g>
+      <g>
+        <circle cx="73.5" cy="97.5" r="2.5"/>
+        <circle cx="73.5" cy="110.5" r="2.5"/>
+        <circle cx="73.5" cy="133.5" r="2.5"/>
+      </g>
+      <g>
+        <circle cx="13.5" cy="97.5" r="2.5"/>
+        <circle cx="13.5" cy="110.5" r="2.5"/>
+        <circle cx="13.5" cy="133.5" r="2.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="175" height="175" viewBox="0 0 175 175">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+      }
+
+      .b {
+        fill: #fefefe;
+      }
+
+      .c {
+        fill: #fbae17;
+      }
+    </style>
+  </defs>
+  <rect class="a" width="175" height="175"/>
+  <g>
+    <path class="b" d="M175,87a44,44,0,0,1-88,0Z"/>
+    <path class="b" d="M87,87H0C0,62.7,19.48,43,43.5,43S87,62.7,87,87Z"/>
+    <path class="c" d="M175,87H87a44,44,0,0,1,88,0Z"/>
+  </g>
+</svg>
