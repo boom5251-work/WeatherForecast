@@ -34,7 +34,10 @@ type public WeatherController() =
         if weatherViewModel.IsInited then
             this.View("Weather", weatherViewModel)
         else
-            this.View("Info")
+            let infoViewModel: InfoViewModel = InfoViewModel("Not found")
+            infoViewModel.Description <- "Couldn't get a forecast for this region."
+
+            this.View("Info", infoViewModel)
 
 
 
@@ -52,4 +55,4 @@ type public WeatherController() =
             let infoViewModel: InfoViewModel = InfoViewModel("Not found")
             infoViewModel.Description <- "Couldn't get a forecast for this region."
 
-            this.View("Info")
+            this.View("Info", infoViewModel)
