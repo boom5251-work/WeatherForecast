@@ -8,8 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="TestData\current.json" />
+    <EmbeddedResource Include="TestData\forecast.json" />
+    <EmbeddedResource Include="TestData\conditions.json" />
+    <EmbeddedResource Include="TestData\astronomy.json" />
+    <Compile Include="ConditionIconServiceTests.fs" />
+    <Compile Include="ModelerTests.fs" />
+    <Compile Include="WeatherApiTests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
+
+  <ItemGroup />
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />

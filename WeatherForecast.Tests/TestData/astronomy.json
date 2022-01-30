@@ -1,0 +1,12 @@
+﻿{
+  "astronomy": {
+    "astro": {
+      "sunrise": "08:27 AM",
+      "sunset": "04:59 PM",
+      "moonrise": "07:54 AM",
+      "moonset": "01:56 PM",
+      "moon_phase": "Waning Crescent",
+      "moon_illumination": "14"
+    }
+  }
+}
