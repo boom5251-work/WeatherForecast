@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <Compile Include="Dependencies\Serializable\WeatherCondition.fs" />
-    <Compile Include="Dependencies\ConditonIconService.fs" />
+    <Compile Include="Dependencies\ConditionIconService.fs" />
     <Compile Include="Models\IConditionViewModel.fs" />
     <Compile Include="Models\AstronomyViewModel.fs" />
     <Compile Include="Models\ForecastViewModel.fs" />
