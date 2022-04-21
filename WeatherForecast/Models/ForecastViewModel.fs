@@ -4,6 +4,7 @@ open System
 
 
 
+// Модель-представление прогноза.
 [<Class>]
 type public ForecastViewModel() =
 
@@ -13,21 +14,22 @@ type public ForecastViewModel() =
 
     interface IConditionViewModel with
 
-        // Время суток
+        // Время суток.
         member val IsDay: bool = false with get, set
 
-        // Температура.
-        member val Temperature: float = 0 with get, set
-        member val FeelsLikeTemperature: float = 0 with get, set
+        // Температура воздуха.
+        member val Temperature: float = 0. with get, set
+        // Температура воздуха (ощущается как).
+        member val FeelsLikeTemperature: float = 0. with get, set
     
-        // Погодные условия
+        // Погодные условия.
         member val WeatherCondition: uint16 = 0us with get, set
 
-
+    // Проверяет проинициализированы ли значения.
     member public this.IsInited
         with get(): bool =
             let _this: IConditionViewModel = this :> IConditionViewModel
-            _this.Temperature <> 0 && _this.FeelsLikeTemperature <> 0 && _this.WeatherCondition <> 0us
+            _this.Temperature <> 0. && _this.FeelsLikeTemperature <> 0. && _this.WeatherCondition <> 0us
 
     
 

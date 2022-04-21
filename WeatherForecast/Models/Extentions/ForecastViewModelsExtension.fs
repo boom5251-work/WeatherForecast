@@ -12,13 +12,11 @@ type public ForecastViewModelsExtension() =
     [<Extension>]
     static member public IsInited (ty: List<ForecastViewModel>): bool =
         
-        let mutable resutl: bool = true
+        let mutable result: bool = true
 
         for item: ForecastViewModel in ty do
             
             if (not item.IsInited) then do
-                resutl <- false
+                result <- false
 
-        resutl
-        
-
+        result

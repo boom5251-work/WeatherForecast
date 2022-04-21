@@ -8,14 +8,16 @@ open WeatherForecast.Dependencies.Serializable
 
 
 
+/// <sammary>Интерфейс зависимости иконок приложения.</sammary>
 [<Interface>]
 type public IConditionIconService =
 
-    abstract member GetIconFilesByCode : uint16 -> List<string>
-    abstract All : IEnumerable<List<string>> with get
+    abstract member GetIconFilesByCode: uint16 -> List<string>
+    abstract member All: IEnumerable<List<string>> with get
 
 
 
+/// <sammry>Зависимость иконок приложения.</sammary>
 [<Class>]
 type public ConditionIconService() =
 
@@ -29,13 +31,13 @@ type public ConditionIconService() =
 
     interface IConditionIconService with
 
-        // Получение названий svg-файлов иконок, соответсвующих коду погодных условий.
+        /// <sammary>Получение названий svg-файлов иконок, соответсвующих коду погодных условий.</sammary>
         member this.GetIconFilesByCode(conditionCode: uint16): List<string> =
 
             conditions.Single(fun condition -> condition.Code = conditionCode).SvgFilePaths.ToList()
 
 
-        // Получение названий svg-файлов иконок для всех погодных условий.
+        /// <sammary>Получение названий svg-файлов иконок для всех погодных условий.</sammary> 
         member val All: IEnumerable<List<string>> = 
             conditions.Select(fun condition -> condition.SvgFilePaths.ToList())
             with get

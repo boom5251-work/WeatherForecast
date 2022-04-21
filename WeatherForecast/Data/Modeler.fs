@@ -9,6 +9,7 @@ open WeatherForecast.Models
 
 
 
+/// <sammary>Модуль, отвечающий за создание моделей-представлений.</sammary>
 module public Modeler =
 
     let private dateTimePattern: string = "yyyy-MM-dd H:mm"
@@ -17,6 +18,8 @@ module public Modeler =
 
 
     // Извелчение данных о местоположении и времени.
+    /// <param name="jsonDocument">Документ Json.</param>
+    /// <param name="viewModel">Модель-представление текущей погоды.</sammary>
     let private initLocation (jsonDocument: JsonDocument) (viewModel: CurrentWeatherViewModel): unit =
         
         let location: JsonElement = jsonDocument.RootElement.GetProperty("location")
@@ -28,6 +31,8 @@ module public Modeler =
 
 
     // Извлечение данных о температуре, скорости вестра, времени суток и погодных условиях.
+    /// <param name="jsonDocument">Документ Json.</param>
+    /// <param name="viewModel">Модель-представление текущей погоды.</sammary>
     let private initCondition (jsonDocument: JsonDocument) (viewModel: CurrentWeatherViewModel): unit =
         
         let current: JsonElement = jsonDocument.RootElement.GetProperty("current")
@@ -47,7 +52,10 @@ module public Modeler =
 
 
 
-    // Извлечение прогноза на сутки.
+    /// <sammary>Извлечение прогноза на сутки.</sammary>
+    /// <parma name="hours">Список элементов Json, представляющих почасовой прогноз.</param>
+    /// <parma name="localNow">Текущик дата и время.</param>
+    /// <param name="viewModels">Список моделей-представлений прогноза.</param>
     let public initForecast (hours: List<JsonElement>) (localNow: DateTime) (viewModels: List<ForecastViewModel>): unit =
         
         // Прошедшие часы пропускаются.
@@ -58,21 +66,22 @@ module public Modeler =
             let viewModel: ForecastViewModel = ForecastViewModel()
             let conditionViewModel: IConditionViewModel = viewModel :> IConditionViewModel
 
-            let dateTime: string = hours[i].GetProperty("time").GetString()
+            let dateTime: string = hours.[i].GetProperty("time").GetString()
             viewModel.DateTime <- DateTime.ParseExact(dateTime, dateTimePattern, CultureInfo.InvariantCulture)
 
-            conditionViewModel.IsDay <- hours[i].GetProperty("is_day").GetInt32() <> 0
+            conditionViewModel.IsDay <- hours.[i].GetProperty("is_day").GetInt32() <> 0
 
-            conditionViewModel.Temperature <- hours[i].GetProperty("temp_c").GetDouble()
-            conditionViewModel.FeelsLikeTemperature <- hours[i].GetProperty("feelslike_c").GetDouble()
+            conditionViewModel.Temperature <- hours.[i].GetProperty("temp_c").GetDouble()
+            conditionViewModel.FeelsLikeTemperature <- hours.[i].GetProperty("feelslike_c").GetDouble()
 
-            conditionViewModel.WeatherCondition <- uint16(hours[i].GetProperty("condition").GetProperty("code").GetInt32())
+            conditionViewModel.WeatherCondition <- uint16(hours.[i].GetProperty("condition").GetProperty("code").GetInt32())
 
             viewModels.Add(viewModel)
 
 
-
-    // Извлечение автрономических данных.
+    /// <summary>Извлечение автрономических данных.</summary>
+    /// <param name="jsonDocument">Документ Json.</param>
+    /// <param name="viewModel">Модель-представление астронических данных.</param>
     let public initAstronomy (jsonDocument: JsonDocument) (viewModel: AstronomyViewModel): unit =
 
         let astro: JsonElement = jsonDocument.RootElement.GetProperty("astronomy").GetProperty("astro")
@@ -89,6 +98,7 @@ module public Modeler =
         
 
     // Создание модели-представления погоды.
+    /// <param name="jsonDocument">Документ Json.</param>
     let public createCurrentWeatherViewModel(jsonDoucment: JsonDocument): CurrentWeatherViewModel =
 
         let viewModel: CurrentWeatherViewModel = CurrentWeatherViewModel()
@@ -98,7 +108,8 @@ module public Modeler =
 
 
 
-    // Создание модели-представления прогноза на сутки.
+    /// <sammary>Создание модели-представления прогноза на сутки.</sammary>
+    /// <param name="jsonDocument">Документ Json.</param>
     let public createForecastViewModels(jsonDocument: JsonDocument): List<ForecastViewModel> =
         
         let hours: List<JsonElement> = List<JsonElement>()
@@ -127,7 +138,8 @@ module public Modeler =
 
 
 
-    // Создание модели-представления для астрономических данных.
+    /// <sammary>Создание модели-представления для астрономических данных.</sammary>
+    /// <param name="jsonDocument">Документ Json.</param>
     let public createAstronomyViewModel(jsonDocument: JsonDocument): AstronomyViewModel =
         
         let viewModel: AstronomyViewModel = AstronomyViewModel()

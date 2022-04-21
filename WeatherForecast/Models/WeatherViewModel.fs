@@ -8,14 +8,19 @@ open WeatherForecast.Models.Extentions
 
 
 
+// Модель-представления, объединяющая все остальные.
 [<Class>]
 type public WeatherViewModel() =
 
+    // Модель-представление текущей погоды.
     member val public Current: CurrentWeatherViewModel = CurrentWeatherViewModel() with get, set
+    // Моедли-представления прогноза.
     member val public Forecast: List<ForecastViewModel> = List<ForecastViewModel>() with get, set
+    // Модель-представление астрономических данных.
     member val public Astronomy: AstronomyViewModel = AstronomyViewModel() with get, set
 
 
+    // Проверяет проинициализированы ли значения.
     member public this.IsInited
         with get(): bool = this.Current.IsInited && this.Forecast.IsInited() && this.Astronomy.IsInited
 
@@ -30,8 +35,8 @@ type public WeatherViewModel() =
             svgFileName <- svgFileNames.Last()
         else
             // Дневная иконка для солнечной погоды зависит от температуры.
-            if conditionViewModel.WeatherCondition = 1000us && conditionViewModel.Temperature > 30 then do
-                svgFileName <- svgFileNames[1]
+            if conditionViewModel.WeatherCondition = 1000us && conditionViewModel.Temperature > 30. then do
+                svgFileName <- svgFileNames.[1]
             else
                 svgFileName <- svgFileNames.First()
 
@@ -50,9 +55,9 @@ type public WeatherViewModel() =
         else
             let temperature: float = current.Temperature
 
-            if 0. <= temperature && temperature < 20 then do
+            if 0. <= temperature && temperature < 20. then do
                 fileName <- "green.css"
-            elif 20. <= temperature && temperature < 30 then do
+            elif 20. <= temperature && temperature < 30. then do
                 fileName <- "brown.css"
             elif 30. <= temperature then do
                 fileName <- "orange.css"

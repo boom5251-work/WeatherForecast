@@ -9,6 +9,7 @@ open WeatherForecast.Models
 
 
 
+/// <sammary>Модуль, отвечающий за работу с сервисов WeatherApi.</sammary>
 module public WeatherApi =
     
     let private apiKey: string = "d4b9d636ed454ab68e4121950212512"
@@ -20,7 +21,9 @@ module public WeatherApi =
 
 
 
-    // Приведение координат к строковому формату агрумента.
+    /// <sammary>Приведение координат к строковому формату агрумента.</sammary>
+    /// <param name="lat">Широта.</param>
+    /// <param name="lon">Долгота.</param>
     let private coordsToString (lat: float) (lon: float): string =
         
         let latStr: string = lat.ToString().Replace(',', '.')
@@ -29,7 +32,8 @@ module public WeatherApi =
 
 
 
-    // Парсинг json-документа, полученного из ответа.
+    /// <sammary>Парсинг json-документа, полученного из ответа.</sammary>
+    /// <param name="response">Отвевт на HTTP-запрос.</param>
     let private parseJson(response: HttpResponseMessage): JsonDocument =
         
         let contentType: string = response.Content.Headers.ContentType.MediaType
@@ -46,7 +50,8 @@ module public WeatherApi =
 
 
 
-    // Отправка GET-запросов.
+    /// <sammary>Отправка GET-запросов.<sammary>
+    /// <param name=""url>Путь HTTP-запроса.</param>
     let public sendHttpGetRequest(url: string): JsonDocument =
         
         async {
@@ -59,7 +64,9 @@ module public WeatherApi =
 
 
 
-    // Получение текущей погоды.
+    /// <sammary>Получение текущей погоды.</sammary>
+    /// <param name="lat">Широта.</param>
+    /// <param name="lon">Долгота.</param>
     let public getCurrentByCoords (lat: float) (lon: float): CurrentWeatherViewModel =
         
         let fullUrl: string = currentUrl + $"&q={coordsToString lat lon}&aqi=no"
@@ -74,7 +81,8 @@ module public WeatherApi =
 
 
 
-    // Получение текущей погоды.
+    /// <sammary>Получение текущей погоды.</sammary>
+    /// <param name="city">Название города.</param>
     let public getCurrentByCity(city: string): CurrentWeatherViewModel =
     
         let fullUrl: string = currentUrl + $"&q={city}&aqi=no"
@@ -89,7 +97,9 @@ module public WeatherApi =
 
 
 
-    // Получение прогноза на сутки.
+    /// <sammary>Получение прогноза на сутки.</sammary>
+    /// <param name="lat">Широта.</param>
+    /// <param name="lon">Долгота.</param>
     let public getForecastByCoords (lat: float) (lon: float): List<ForecastViewModel> =
         
         let fullUrl: string = forecastUrl + $"&q={coordsToString lat lon}&days=2&aqi=no&alerts=no"
@@ -104,7 +114,8 @@ module public WeatherApi =
 
 
     
-    // Получение прогноза на сутки
+    /// <sammary>Получение прогноза на сутки.</sammary>
+    /// <param name="city">Название города.</param>
     let public getForecastByCity(city: string): List<ForecastViewModel> =
         
         let fullUrl: string = forecastUrl + $"&q={city}&days=2&aqi=no&alerts=no"
@@ -120,7 +131,9 @@ module public WeatherApi =
 
 
 
-    // Получение астрономических данных.
+    /// <samary>Получение астрономических данных.</sammary>
+    /// <param name="lat">Широта.</param>
+    /// <param name="lon">Долгота.</param>
     let public getAstronomyByCoords (lat: float) (lon: float): AstronomyViewModel = 
         
         let dateStr: string = DateTime.Now.ToString("yyyy-MM-dd")
@@ -137,7 +150,8 @@ module public WeatherApi =
 
 
 
-    // Получение астрономических данных.
+    /// <sammary>Получение астрономических данных.</sammary>
+    /// <param name="city">Название города.</param>
     let public getAstronomyByCity(city: string): AstronomyViewModel =
         
         let dateStr: string = DateTime.Now.ToString("yyyy-MM-dd")
